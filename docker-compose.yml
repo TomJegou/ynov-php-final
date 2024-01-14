@@ -1,0 +1,21 @@
+services:
+  front:
+    image: tomyj/tp-php-front
+    container_name: PHP-FINAL-front
+    build:
+      context: ./PHP-TP_FINAL-FRONT/pussycat-agency
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    restart: unless-stopped
+  api:
+    image: tomyj/tp-php-api
+    container_name: php-api
+    build:
+      context: ./Tp_PHP/RestApi
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - api-volume:/app/database
+volumes:
+  api-volume:

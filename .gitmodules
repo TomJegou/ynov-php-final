@@ -1,0 +1,6 @@
+[submodule "Tp_PHP"]
+	path = Tp_PHP
+	url = https://github.com/GnsiXenon/Tp_PHP
+[submodule "PHP-TP_FINAL-FRONT"]
+	path = PHP-TP_FINAL-FRONT
+	url = https://github.com/TomJegou/PHP-TP_FINAL-FRONT.git
